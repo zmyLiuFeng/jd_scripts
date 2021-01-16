@@ -12,7 +12,7 @@ hostname = wq.jd.com
 ~~~~~~~~~~~~~~~~
 */
 
-const $ = new Env('京喜');
+const $ = new Env('jingxi');
 let cookiesArr = [], cookie = '', signresult,todaypoint = 0;
 const notify = $.isNode() ? require('./sendNotify') : '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
