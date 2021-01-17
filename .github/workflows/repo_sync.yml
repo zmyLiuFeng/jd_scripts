@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-heisedetian-scripts
+name: sync-xuxiaobo4510-scripts
 on:
   schedule:
     - cron: '1 0,15 * * *'
@@ -21,11 +21,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync heisedetian-scripts
+      - name: sync xuxiaobo4510-scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/heisedetian/jd_scripts.git"
+          source_repo: "https://github.com/xuxiaobo4510/jd_scripts.git"
           source_branch: "master" # mySelf仓库的分支
           destination_branch: "master" #你自己远程的分支
           github_token: ${{ secrets.PAT }}
