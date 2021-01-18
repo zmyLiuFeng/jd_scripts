@@ -35,7 +35,7 @@ jobs:
         run: |
           cd ~/jd_scripts
           npm install
-      - name: '运行 【京东炸年兽】'
+      - name: '运行 【京东炸年兽~任务】'
         run: |
           cd ~/jd_scripts
           node jd_nian.js
