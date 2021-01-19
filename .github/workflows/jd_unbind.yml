@@ -6,7 +6,7 @@ name: 注销店铺会员
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 23 * * *'
+    - cron: '55 15 * * *'
   watch:
     types: started
   repository_dispatch:
